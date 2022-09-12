@@ -16,20 +16,20 @@ const ModelSection: React.FC<Props> = ({
   ...props
 }) => {
   const { registerModel } = useModel(modelName)
-  const ref = useRef<HTMLDivElement>(null)
+  const sectionRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    if (ref?.current) {
+    if (sectionRef.current) {
       registerModel({
         modelName,
         overlayNode,
-        sectionRef: ref
+        sectionRef
       })
     }
   }, [children, modelName, overlayNode, registerModel])
 
   return (
-    <Container ref={ref} {...props}>
+    <Container ref={sectionRef} {...props}>
       {children}
     </Container>
   )
