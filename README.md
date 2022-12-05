@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esse projeto foi feito durante a realização de uma vídeo-aula, com o objetivo de reproduzir a página inicial da Tesla.
 
 ## Available Scripts
 
